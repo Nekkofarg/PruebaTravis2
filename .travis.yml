@@ -5,9 +5,9 @@ branches:
  only:
   - master
 
-  script:
-    - npm i
-    - npm run test
+script:
+  - npm i
+  - npm run test
 cache:
   directories:
     - node_modules
