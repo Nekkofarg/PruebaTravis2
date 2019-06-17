@@ -5,7 +5,7 @@ describe("Rest a Number", () =>{
         const number1 = 1
         const number2 = 1
         const result = RestNumber(number1,number2)
-        expect(result).toEqual(0);
+        expect(result).toEqual(1);
     })
 })
 
