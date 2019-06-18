@@ -12,7 +12,7 @@ cache:
   directories:
     - node_modules
 after_success:
-  - bash scripts/deploy.sh
+  - bash scripts/develop.sh
 deploy:
   local_dir: src
   provider: pages
