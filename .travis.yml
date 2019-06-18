@@ -11,3 +11,13 @@ script:
 cache:
   directories:
     - node_modules
+after_success:
+  - bash scripts/deploy.sh
+deploy:
+  local_dir: src
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: develop
